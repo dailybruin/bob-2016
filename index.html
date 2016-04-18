@@ -1,10 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title></title>
-</head>
-<body>
-	Hello world
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+	<div id="sidebar">
+	    <a id="sidebar-logo" href="#">BOB 2016</a>
+	    <div id="sidebar-expand">
+	        Menu
+	        <div class="expand-control"></div>
+	    </div>
+	    <nav>
+	        <h2>Chapter 1</h2>
+	        <a class="nav-item active" href="http://yolanda.dailybruin.com/chapter-1/through-hell-and-high-water">Through Hell and High Water</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-1/her-second-chance">Her Second Chance</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-1/a-network-of-support">A Network of Support</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-1/the-perfect-storm">The Perfect Storm</a>
+	        <h2>Chapter 2</h2>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-2/fading-funds-and-continued-efforts">Fading Funds and Continued Efforts</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-2/amid-destruction-midwives-bring-life">Amid Destruction Midwives Bring Life</a>
+	        <h2>Chapter 3</h2>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-3/harvesting-hope">Harvesting Hope</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/chapter-3/a-collective-goal">A Collective Goal</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/remembering-san-joaquin">Remembering San Joaquin</a>
+	        <h2>More</h2>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/about">About the project</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/print-version">Print version</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/blog">Trip blog</a>
+	        <a class="nav-item" href="http://yolanda.dailybruin.com/map">Map</a>
+	    </nav>
+	</div><!-- /sidebar -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#sidebar-expand").click(function(){
+	    	console.log("nav clicked");
+	        $(this).parent("#sidebar").toggleClass("expanded");
+	    });
+	});
+</script>
+
 </body>
 </html>
+
