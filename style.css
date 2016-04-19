@@ -38,6 +38,15 @@ article blockquote {
   line-height: 1.5;
   border-left: 4px solid #E57A44; }
 
+article blockquote.right {
+  float: right;
+  margin: 2rem 4rem;
+  margin-right: -200px;
+  border: none;
+  border-right: 4px solid #E57A44;
+  padding: none;
+  padding-right: 15px; }
+
 p {
   display: block; }
 
@@ -52,10 +61,16 @@ figure {
   display: inline-block;
   float: none;
   clear: both;
-  width: 50%;
+  width: 80%;
   margin: 5%;
   max-width: none;
-  float: left; }
+  float: left;
+  margin-left: -200px; }
+
+figure.right {
+  float: right;
+  margin: 5%;
+  margin-right: -200px; }
 
 img {
   max-width: 100%;
@@ -80,7 +95,17 @@ figcaption {
     margin: auto;
     padding: 1rem 0; }
 
+  figure.right {
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0; }
+
   article blockquote {
+    float: none;
+    max-width: 100%;
+    margin: auto; }
+
+  article blockquote.right {
     float: none;
     max-width: 100%;
     margin: auto; }
