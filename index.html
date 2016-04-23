@@ -7,7 +7,7 @@
 </head>
 <body>
 		<div class="video-wrapper">
-			<video autoplay poster="#" id="landing-vd" loop>
+			<video poster="#" id="landing-vd" loop>
 	  		<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 				<source src="assets/openingframe.mp4" type="video/mp4">
 			</video>
@@ -40,5 +40,35 @@
 		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
 		<blockquote>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
 	</article>
+	<script src="
+https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+	<script>
+		  $(document).ready(function() {
+            // Get media - with autoplay disabled (audio or video)
+            var media = $('video').not("[autoplay='autoplay']");
+            var tolerancePixel = 40;
+
+            function checkMedia(){
+                // Get current browser top and bottom
+                var scrollTop = $(window).scrollTop() + tolerancePixel;
+                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+                //if ($(window).scrollTop() > $(window).height() - 10) {
+                media.each(function(index, el) {
+                    var yTopMedia = $(this).offset().top;
+                    var yBottomMedia = $(this).height() + yTopMedia;
+
+                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){
+                        $(this).get(0).play();
+                    } else {
+                        $(this).get(0).pause();
+                    }
+                });
+
+                //}
+            }
+            $(document).on('scroll', checkMedia);
+        });
+	</script>
 </body>
 </html>
