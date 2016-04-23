@@ -46,6 +46,11 @@ article blockquote.right {
   border-right: 4px solid #E57A44;
   padding: none; }
 
+#articlediv {
+  padding-top: 30px;
+  padding-left: 300px;
+  margin-top: 30px; }
+
 p {
   display: block; }
 
@@ -109,6 +114,11 @@ figcaption {
     margin: auto; }
 
   article.post {
+    padding-left: 0px; }
+
+  #articlediv {
+    padding-top: 30px;
+    margin-top: 30px;
     padding-left: 0px; } }
 /* Copyright Daily Bruin 2016 */
 h2 {
@@ -124,7 +134,9 @@ h2 {
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 1001;
   /* need to get on top of leaflet */
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  left: 0; }
   #sidebar #sidebar-logo {
     color: black;
     font-weight: 100;
@@ -182,7 +194,12 @@ h2 {
       color: #444;
       text-align: right;
       margin-right: 12px;
-      cursor: default; }
+      cursor: default;
+      z-index: 1001;
+      /* need to get on top of leaflet */
+      position: fixed;
+      top: 0;
+      left: 0; }
   #sidebar.expanded nav {
     display: block; }
   #sidebar nav .nav-item {
@@ -213,6 +230,8 @@ h2 {
   #sidebar {
     width: 220px;
     height: 100%;
+    z-index: 1001;
+    /* need to get on top of leaflet */
     position: fixed;
     left: 30px;
     top: 0;

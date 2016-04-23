@@ -58,6 +58,12 @@ article blockquote.right{
     padding: none;
 }
 
+#articlediv {
+  padding-top: 30px;
+  padding-left: 300px;
+  margin-top: 30px;
+  }
+
 p{
 	display: block;
 }
@@ -113,6 +119,7 @@ figcaption{
         width: 100%;
         margin: auto;
         padding: 1rem 0;
+      
     }
 
     figure.right {
@@ -135,7 +142,14 @@ figcaption{
 
     article.post {
 		padding-left: 0px;
+    
 	}
+#articlediv {
+  padding-top: 30px;
+  margin-top: 30px;
+  padding-left: 0px;
+  }
+
 }
 
 /* Copyright Daily Bruin 2016 */
