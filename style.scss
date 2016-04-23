@@ -7,6 +7,38 @@ body{
 	background-color: #fdfdfd;
 }
 
+.video-wrapper {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	z-index: -1;
+}
+
+video { 
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	min-height: 50%;
+	min-width: 50%;
+	opacity: 0.8;
+}
+
+.landing-header-wrapper {
+	position: relative;
+}
+
+.landing-header {
+	position: relative;
+	top: 30vh;
+	color: white;
+	letter-spacing: 5px;
+}
+
 article{
 	max-width: 600px;
 	margin: 3rem auto;
@@ -85,4 +117,5 @@ figcaption{
 	font-size: 15.75px;
 	display: block;
 }
+
 
