@@ -2,36 +2,63 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>BOB</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+	<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+	<!-- PhotoSwipe is below -->
+	<!-- Core CSS file -->
+	<link rel="stylesheet" href="dist/photoswipe.css">
+
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+	In the folder of skin CSS file there are also:
+	- .png and .svg icons sprite,
+	- preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="dist/default-skin/default-skin.css">
+
+	<!-- Core JS file -->
+	<script src="dist/photoswipe.min.js"></script>
+
+	<!-- UI JS file -->
+	<script src="dist/photoswipe-ui-default.min.js"></script>
+	<title>Photo Gallery</title>
 </head>
 <body>
-<div class="landing-video"></div>
-<div class="landing">
-	<div class="top">
-		<span class="share"></span>
-		<p class="bridget"></p>
-		<h1>Title</h1>
-		<p class="descrip"></p>
-		<p class="author"></p>
+	<h2> Unite Gallery</h2>
+	<div id="gallery" style="display:none;">
+
+		<img alt="Image 1 Title" src="https://tinycupcakesstore.files.wordpress.com/2015/03/cupcakes.jpg"
+		data-image="https://tinycupcakesstore.files.wordpress.com/2015/03/cupcakes.jpg"
+		data-description="Image 1 Description">
+
+		<img alt="Image 2 Title" src="http://www.yourcupofcake.com/wp-content/uploads/2013/08/Strawberry-Red-Velvet-Cupcakes1.jpg"
+		data-image="http://www.yourcupofcake.com/wp-content/uploads/2013/08/Strawberry-Red-Velvet-Cupcakes1.jpg"
+		data-description="Image 2 Description">
+
+		<img alt ="Image 3 Title" src="https://easybaked.files.wordpress.com/2013/03/strawberry-lemonade-cupcake2.jpg"
+		data-image="https://easybaked.files.wordpress.com/2013/03/strawberry-lemonade-cupcake2.jpg"
+		data-description="Image 3 Description">
+
+		<img alt ="Cactus" src="img/cactus.jpg"
+		data-image="img/cactus.jpg"
+		data-description="Cactus">
+
+		<img alt ="Cactus Garden" src="img/cactus_garden.jpg"
+		data-image="img/cactus_garden.jpg"
+		data-description="Cactus Garden">
+
 	</div>
-</div>
-<article class="post">
-	<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
-	<figure>
-		<h1 style="visibility:hidden;height:1px;margin:0" id="">image header</h1>
-		<img src="img/cactus.jpg">
-		<p class="title">title of photo</p>
-		<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
-	</figure>
-	<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
-	<figure>
-		<h1 style="visibility:hidden;height:1px;margin:0" id="">image header</h1>
-		<img src="img/cactus_garden.jpg">
-		<p class="title">title of photo</p>
-		<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
-	</figure>
-	<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
-	<blockquote>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
-</article>
+	<script type="text/javascript">
+
+	jQuery(document).ready(function(){
+
+		jQuery("#gallery").unitegallery({
+			tiles_type:"justified"
+		});
+
+	});
+	</script>
+
 </body>
 </html>
