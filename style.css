@@ -61,12 +61,12 @@ figure {
 
 img {
   max-width: 100%;
-  vertical-aligh: middle; }
+  vertical-align: middle; }
 
 figcaption.less {
   font-size: 0.9rem;
   color: grey;
-  lin-height: 1.5;
+  line-height: 1.5;
   font-style: italic;
   font-family: sans-serif; }
 
@@ -74,5 +74,22 @@ figcaption {
   color: #222;
   font-size: 15.75px;
   display: block; }
+
+.my-gallery {
+  width: 100%;
+  float: left; }
+
+.my-gallery img {
+  width: 100%;
+  height: auto; }
+
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px; }
+
+.my-gallery figcaption {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
