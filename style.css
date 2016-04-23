@@ -6,6 +6,21 @@ body {
   color: #111;
   background-color: #fdfdfd; }
 
+.video-wrapper {
+  width: 100%;
+  z-index: -1; }
+
+video {
+  width: 100%;
+  opacity: 0.8; }
+
+.landing-header {
+  text-align: center;
+  top: 35%;
+  left: 30%;
+  color: white;
+  position: absolute; }
+
 article {
   max-width: 600px;
   width: auto;
