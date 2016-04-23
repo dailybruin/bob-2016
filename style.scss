@@ -155,7 +155,10 @@ h2 {
   width: 100%;
   background-color: rgba(255,255,255, 0.95);
   z-index: 1001; /* need to get on top of leaflet */
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
   #sidebar-logo {
     color: black;
     font-weight: 100;
@@ -218,6 +221,12 @@ h2 {
       text-align: right;
       margin-right: 12px;
       cursor: default;
+
+
+      z-index: 1001; /* need to get on top of leaflet */
+  position: fixed;
+  top: 0;
+  left: 0;
     }
   }
   &.expanded nav {
@@ -269,7 +278,10 @@ h2 {
   #sidebar {
     width: 220px;
     height: 100%;
-    position: absolute;
+    
+    z-index: 1001; /* need to get on top of leaflet */
+ 
+    position: fixed;
     left: 30px;
     top: 0;
     bottom: 0;
