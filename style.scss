@@ -7,14 +7,6 @@ body{
 	background-color: #fdfdfd;
 }
 
-.landing{
-	
-}
-
-.top{
-	text-align: center;
-}
-
 article{
 	max-width: 600px;
 	width: auto;
@@ -90,13 +82,13 @@ figure.right{
 
 img{
 	max-width: 100%;
-	vertical-aligh: middle;
+	vertical-align: middle;
 }
 
 figcaption.less{
 	font-size: 0.9rem;
 	color: grey;
-	lin-height: 1.5;
+	line-height: 1.5;
 	font-style: italic;
 	font-family: sans-serif;
 }
@@ -138,11 +130,11 @@ figcaption{
 	}
 }
 
-/* Copyright Daily Bruin 2016 */
+// SIDEBAR STYLES
 
 $nav_border_right_color: #515791;
 
-h2 {
+#sidebar h2 {
   border-bottom: 1px solid rgba(0,0,0, 0.1); 
   font-size: 2rem;
   font-family: Georgia;
