@@ -5,6 +5,7 @@ body {
 	font-weight: 300;
 	color: #111;
 	background-color: #fdfdfd;
+	padding: 1em;
 }
 
 .video-wrapper {
@@ -246,15 +247,17 @@ $nav_border_right_color: #515791;
     }
   }
 
-  article blockquote {
-    float: none;
-    max-width: 100%;
-    margin: auto;
+  article  {
+	  blockquote {
+	    float: none;
+	    max-width: 100%;
+	    margin: 1em auto 1em auto;
+	}
 
-    .right {
+    blockquote.right {
         float: none;
         max-width: 100%;
-        margin: auto;
+        margin: 1em auto 1em auto;
     }
   }
 

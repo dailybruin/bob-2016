@@ -4,7 +4,8 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #111;
-  background-color: #fdfdfd; }
+  background-color: #fdfdfd;
+  padding: 1em; }
 
 .video-wrapper {
   width: 100%;
@@ -205,11 +206,11 @@ figcaption {
   article blockquote {
     float: none;
     max-width: 100%;
-    margin: auto; }
-    article blockquote .right {
-      float: none;
-      max-width: 100%;
-      margin: auto; }
+    margin: 1em auto 1em auto; }
+  article blockquote.right {
+    float: none;
+    max-width: 100%;
+    margin: 1em auto 1em auto; }
 
   #articlediv {
     padding-top: 30px;
