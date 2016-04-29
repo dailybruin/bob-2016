@@ -1,5 +1,5 @@
 body {
-  font-family: serif;
+  font-family: georgia, "times new roman", serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
@@ -12,7 +12,7 @@ body {
   z-index: -1;
 }
 
-video { 
+video {
   width: 100%;
   opacity: 0.8;
 }
@@ -118,7 +118,7 @@ figcaption{
 $nav_border_right_color: #515791;
 
 #sidebar h2 {
-  border-bottom: 1px solid rgba(0,0,0, 0.1); 
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
   font-size: 2rem;
   font-family: Georgia;
   font-weight: bold;
@@ -133,11 +133,11 @@ $nav_border_right_color: #515791;
   position: fixed;
   top: 0;
   left: 0;
-  
+
   #sidebar-logo {
     color: black;
     font-weight: 100;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     display: block;
     text-align: right;
     text-transform: uppercase;
@@ -205,9 +205,9 @@ $nav_border_right_color: #515791;
     padding: 7px 10px;
     display: block;
     width: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
     letter-spacing: 1.2px;
-    font-weight: 200;
+    font-weight: 400;
     &:hover {
       background-color: rgba(81, 87, 145, 0.05);
     }
@@ -287,7 +287,7 @@ $nav_border_right_color: #515791;
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    
+
     nav {
       display: block;
       .nav-item {
@@ -304,6 +304,7 @@ $nav_border_right_color: #515791;
     }
     #sidebar-expand {
       display: none;
+      font-family: "Oswald";
     }
   }
 }
