@@ -225,6 +225,9 @@ figcaption {
       margin: auto;
       padding: 1rem 0; }
 
+  .landing-header {
+    left: 0; }
+
   article blockquote {
     float: none;
     max-width: 100%;
