@@ -14,21 +14,31 @@ body {
 }
 
 .video-wrapper {
-  width: 100%;
-  z-index: -1;
+	position: relative;
+	width: 100%;
+	z-index: -100;
 }
 
-video {
+video { 
+	position: relative;
   width: 100%;
-  opacity: 0.8;
+	opacity: 0.8;
+	z-index: -100;
 }
 
 .landing-header {
+	position: absolute;
+  padding: 0;
+  margin: auto;
   text-align: center;
-  top: 35%;
-  left: 30%;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50%);
+  letter-spacing: 5px;
   color: white;
-  position: absolute;
+  z-index: 1;
 }
 
 article{
@@ -359,3 +369,4 @@ $nav_border_right_color: #515791;
     display: none;
   }
 }
+
