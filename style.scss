@@ -1,3 +1,9 @@
+@mixin headingStyles {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
 body {
   font-family: georgia, "times new roman", serif;
   font-size: 18px;
@@ -32,26 +38,20 @@ article{
   margin: 3rem auto;
   padding-top: 0px;
   line-height: 1.5;
+  h1 {
+    @include headingStyles;
+  }
 }
 
 article blockquote{
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
   float: left;
   max-width: 500px;
   margin: 2rem 4rem;
   margin-left: -100px;
-  color: #424242;
-  font-family: Lora, serif;
-  font-weight: 700;
-  border: none;
-  font-size: 2rem;
-  letter-spacing: -0.5px;
-  line-height: 1.5;
   border-left: 4px solid #E57A44;
+  @include headingStyles;
+  font-size: 2rem;
 }
 
 article blockquote.right{
@@ -78,6 +78,17 @@ p {
     font-weight: bold;
     font-size: 1.5rem;
   }
+}
+
+.first-letter {
+  float: left;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-right: 10px;
+  color: #2199e8;
 }
 
 //left figure
@@ -205,9 +216,8 @@ $nav_border_right_color: #515791;
     padding: 7px 10px;
     display: block;
     width: 100%;
-    font-family: "Oswald", Helvetica, Arial, sans-serif;
-    letter-spacing: 1.2px;
-    font-weight: 400;
+    @include headingStyles;
+
     &:hover {
       background-color: rgba(81, 87, 145, 0.05);
     }
@@ -216,6 +226,7 @@ $nav_border_right_color: #515791;
       border-right: 4px solid $nav_border_right_color;
       font-weight: 400;
     }
+
   }
 }
 // RESPOND.CSS
@@ -258,7 +269,7 @@ $nav_border_right_color: #515791;
       float: none;
       max-width: 100%;
       margin: 1em auto 1em auto;
-  }
+    }
 
     blockquote.right {
         float: none;
