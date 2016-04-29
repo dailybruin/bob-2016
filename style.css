@@ -21,6 +21,7 @@ video {
 
 .landing-header {
   position: absolute;
+  padding: 0;
   margin: auto;
   color: white;
   top: 50%;
@@ -30,6 +31,15 @@ video {
   transform: translateY(-50%);
   letter-spacing: 5px;
   z-index: 1; }
+
+#landing-title {
+  font-size: 3em; }
+
+#landing-descr {
+  font-size: 1.5em; }
+
+#landing-author {
+  font-size: 1em; }
 
 article {
   max-width: 600px;
