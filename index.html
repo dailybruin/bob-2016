@@ -30,7 +30,7 @@
 </div><!-- /sidebar -->
 
 <div class="video-wrapper">
-	<video poster="#" id="landing-vd" loop>
+	<video autoplay poster="#" id="landing-vd" loop>
 		<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 		<source src="assets/openingframe.mp4" type="video/mp4">
 	</video>
@@ -185,36 +185,6 @@
 	    });
 	});
 </script>
-
-<!-- Video JS -->
-<script>
-		  $(document).ready(function() {
-            // Get media - with autoplay disabled (audio or video)
-            var media = $('video').not("[autoplay='autoplay']");
-            var tolerancePixel = 40;
-
-            function checkMedia(){
-                // Get current browser top and bottom
-                var scrollTop = $(window).scrollTop() + tolerancePixel;
-                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
-
-                //if ($(window).scrollTop() > $(window).height() - 10) {
-                media.each(function(index, el) {
-                    var yTopMedia = $(this).offset().top;
-                    var yBottomMedia = $(this).height() + yTopMedia;
-
-                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){
-                        $(this).get(0).play();
-                    } else {
-                        $(this).get(0).pause();
-                    }
-                });
-
-                //}
-            }
-            $(document).on('scroll', checkMedia);
-        });
-	</script>
 
 <script>
 $(document).ready(function() {
