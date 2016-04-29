@@ -190,6 +190,9 @@
 $(document).ready(function() {
     $(".nav-item").click(function() {
     	changeNavHilight($(this));
+    	if ($('#sidebar-expand').css('display') === 'block') {
+    		$('#sidebar').removeClass('expanded');
+    	}
     });
 });
 

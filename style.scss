@@ -51,26 +51,16 @@ article{
   h1 {
     @include headingStyles;
   }
-}
-
-article blockquote{
-  padding-left: 15px;
-  float: left;
-  max-width: 500px;
-  margin: 2rem 4rem;
-  margin-left: -100px;
-  border-left: 4px solid #E57A44;
-  @include headingStyles;
-  font-size: 2rem;
-}
-
-article blockquote.right{
-  float: right;
-  margin: 2rem 4rem;
-  margin-right: -100px;
-  border: none;
-    border-right: 4px solid #E57A44;
-    padding: none;
+  blockquote{
+    padding-left: 15px;
+    float: left;
+    max-width: 500px;
+    margin: 2rem 4rem;
+    margin-left: -100px;
+    border-left: 4px solid #E57A44;
+    @include headingStyles;
+    font-size: 2rem;
+  }
 }
 
 #articlediv {
@@ -81,13 +71,6 @@ article blockquote.right{
 
 p {
   display: block;
-  .title{
-    margin: 0.75rem 0;
-    font-family: serif;
-    line-height: 1.3;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
 }
 
 .first-letter {
@@ -111,11 +94,16 @@ figure{
   max-width: none;
   margin-left: -100px;
 
-  .right{
-      float: right;
-      margin: 5%;
-      margin-right: -100px;
+  .title{
+    margin: 0.75rem 0;
+    @include headingStyles;
   }
+}
+
+article .right{
+    float: right;
+    margin: 5%;
+    margin-right: -100px;
 }
 
 img{
