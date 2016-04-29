@@ -34,11 +34,11 @@ video {
   top: 50%;
   right: 0;
   bottom: 0;
-  left: 25%;
+  left: 15%;
   transform: translateY(-50%);
-  letter-spacing: 5px;
   color: white;
   z-index: 1;
+  @include headingStyles;
 }
 
 article{
