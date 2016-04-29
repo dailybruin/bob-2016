@@ -25,7 +25,7 @@ video {
   top: 50%;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 15%;
   transform: translateY(-50%);
   color: white;
   z-index: 1;
@@ -226,6 +226,9 @@ figcaption {
       width: 100%;
       margin: auto;
       padding: 1rem 0; }
+
+  .landing-header {
+    left: 0; }
 
   article blockquote {
     float: none;
