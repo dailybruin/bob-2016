@@ -36,9 +36,9 @@ video {
   bottom: 0;
   left: 0;
   transform: translateY(-50%);
-  letter-spacing: 5px;
   color: white;
   z-index: 1;
+  @include headingStyles;
 }
 
 article{
