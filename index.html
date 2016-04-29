@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>BOB</title>
 </head>
 <body>
-		<div class="landing-wrapper">
-			<video poster="#" loop>
-	  		<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-				<source src="assets/openingframe.mp4" type="video/mp4">
-			</video>
-			<div class="landing-header text-center">
-					<span class="share"></span>
-					<p class="bridget"></p>
-					<h1 id="landing-title">BRIDGET O'BRIEN SCHOLARSHIP</h1>
-					<p id="landing-descr">DESCRIPTION</p>
-					<p id="landing-author">BY AUTHOR</p>
-			</div>
+
+<div id="sidebar">
+    <a id="sidebar-logo" href="#">BOB 2016</a>
+    <div id="sidebar-expand">
+        Menu
+        <div class="expand-control"></div>
+    </div>
+    <nav>
+        <h2>Student Section</h2>
+        <a class="nav-item active" href="#post1">writiing piece 1</a>
+        <a class="nav-item" href="#post2">writing piece 2</a>
+        <a class="nav-item" href="#">photo essay 1</a>
+        <h2>Admin Section</h2>
+        <a class="nav-item" href="#post3">writiing piece 3</a>
+        <a class="nav-item" href="#">writing piece 4</a>
+        <a class="nav-item" href="#">photo essay 2</a>
+    </nav>
+</div><!-- /sidebar -->
+
+<div class="video-wrapper">
+	<video poster="#" id="landing-vd" loop>
+		<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+		<source src="assets/openingframe.mp4" type="video/mp4">
+	</video>
+
+	<div class="landing-header-wrapper">
+		<div class="landing-header">
+			<span class="share"></span>
+			<p class="bridget"></p>
+			<h1>Bridget O'Brien Scholarship</h1>
+			<p class="descrip">Description</p>
+			<p class="author">By Author</p>
 		</div>
-	<article class="post">
+	</div>
+</div>
+
+
+<div id="articlediv">
+	<article class="post" id="post1">
 		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
-		<figure>
-			<h1 style="visibility:hidden;height:1px;margin:0" id="">image header</h1>
+		<figure class="right">
+			<h1 style="visibility:hidden;height:1px;margin:0;" id="">image header</h1>
 			<img src="img/cactus.jpg">
 			<p class="title">title of photo</p>
 			<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
 		</figure>
-		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
-		<figure>
+		<p>
+		Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<figure> 
 			<h1 style="visibility:hidden;height:1px;margin:0" id="">image header</h1>
 			<img src="img/cactus_garden.jpg">
 			<p class="title">title of photo</p>
@@ -36,10 +63,87 @@
 		</figure>
 		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
 		<blockquote>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<blockquote class="right">Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
 	</article>
-	<script src="
-https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
-	<script>
+
+	<hr>
+
+	<article class="post" id="post2">
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<figure class="right">
+			<h1 style="visibility:hidden;height:1px;margin:0;" id="">image header</h1>
+			<img src="img/cactus.jpg">
+			<p class="title">title of photo</p>
+			<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
+		</figure>
+		<p>
+		Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<figure> 
+			<h1 style="visibility:hidden;height:1px;margin:0" id="">image header</h1>
+			<img src="img/cactus_garden.jpg">
+			<p class="title">title of photo</p>
+			<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
+		</figure>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<blockquote>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<blockquote class="right">Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+	</article>
+
+	<hr>
+
+	<article class="post" id="post3">
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<figure class="right">
+			<h1 style="visibility:hidden;height:1px;margin:0;" id="">image header</h1>
+			<img src="img/cactus.jpg">
+			<p class="title">title of photo</p>
+			<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
+		</figure>
+		<p>
+		Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<figure> 
+			<h1 style="visibility:hidden;height:1px;margin:0" id="">image header</h1>
+			<img src="img/cactus_garden.jpg">
+			<p class="title">title of photo</p>
+			<figcaption class="less">here is the figcaption for the photo: Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</figcaption>
+		</figure>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<blockquote>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+		<blockquote class="right">Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc.</blockquote>
+		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
+	</article>
+
+	<hr>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#sidebar-expand").click(function(){
+	    	console.log("nav clicked");
+	        $(this).parent("#sidebar").toggleClass("expanded");
+	    });
+	});
+</script>
+
+
+<script>
+$(document).ready(function() {
+    $(".nav-item").click(function() {
+        $(".nav-item").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+</script>
+
+<!-- Video JS -->
+<script>
 		  $(document).ready(function() {
             // Get media - with autoplay disabled (audio or video)
             var media = $('video').not("[autoplay='autoplay']");
@@ -67,5 +171,15 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
             $(document).on('scroll', checkMedia);
         });
 	</script>
+
+<script>
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});
+</script>
+
 </body>
 </html>
