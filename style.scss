@@ -1,11 +1,10 @@
 body {
-	font-family: serif;
-	font-size: 18px;
-	line-height: 1.5;
-	font-weight: 300;
-	color: #111;
-	background-color: #fdfdfd;
-	padding: 1em;
+  font-family: georgia, "times new roman", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #111;
+  background-color: #fdfdfd;
 }
 
 .video-wrapper {
@@ -37,12 +36,12 @@ video {
 }
 
 article{
-	max-width: 600px;
-	width: auto;
-	text-align: left;
-	margin: 3rem auto;
-	padding-top: 0px;
-	line-height: 1.5;
+  max-width: 600px;
+  width: auto;
+  text-align: left;
+  margin: 3rem auto;
+  padding-top: 0px;
+  line-height: 1.5;
 }
 
 article blockquote{
@@ -66,21 +65,22 @@ article blockquote{
 }
 
 article blockquote.right{
-	float: right;
-	margin: 2rem 4rem;
-	margin-right: -100px;
-	border: none;
+  float: right;
+  margin: 2rem 4rem;
+  margin-right: -100px;
+  border: none;
     border-right: 4px solid #E57A44;
     padding: none;
 }
 
 #articlediv {
-  margin-left: 300px;
+  margin-left: 290px;
+  padding: 1em;
 }
 
 
 p {
-	display: block;
+  display: block;
   .title{
     margin: 0.75rem 0;
     font-family: serif;
@@ -92,8 +92,8 @@ p {
 
 //left figure
 figure{
-	display: inline-block;
-	float: left;
+  display: inline-block;
+  float: left;
   clear: both;
   width: 80%;
   margin: 5%;
@@ -108,14 +108,14 @@ figure{
 }
 
 img{
-	max-width: 100%;
-	vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 figcaption{
-	color: #222;
-	font-size: 15.75px;
-	display: block;
+  color: #222;
+  font-size: 15.75px;
+  display: block;
   .less{
     font-size: 0.9rem;
     color: grey;
@@ -128,7 +128,7 @@ figcaption{
 $nav_border_right_color: #515791;
 
 #sidebar h2 {
-  border-bottom: 1px solid rgba(0,0,0, 0.1); 
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
   font-size: 2rem;
   font-family: Georgia;
   font-weight: bold;
@@ -143,11 +143,11 @@ $nav_border_right_color: #515791;
   position: fixed;
   top: 0;
   left: 0;
-  
+
   #sidebar-logo {
     color: black;
     font-weight: 100;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     display: block;
     text-align: right;
     text-transform: uppercase;
@@ -215,9 +215,9 @@ $nav_border_right_color: #515791;
     padding: 7px 10px;
     display: block;
     width: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
     letter-spacing: 1.2px;
-    font-weight: 200;
+    font-weight: 400;
     &:hover {
       background-color: rgba(81, 87, 145, 0.05);
     }
@@ -264,11 +264,11 @@ $nav_border_right_color: #515791;
   }
 
   article  {
-	  blockquote {
-	    float: none;
-	    max-width: 100%;
-	    margin: 1em auto 1em auto;
-	}
+    blockquote {
+      float: none;
+      max-width: 100%;
+      margin: 1em auto 1em auto;
+  }
 
     blockquote.right {
         float: none;
@@ -297,7 +297,7 @@ $nav_border_right_color: #515791;
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    
+
     nav {
       display: block;
       .nav-item {
@@ -314,6 +314,7 @@ $nav_border_right_color: #515791;
     }
     #sidebar-expand {
       display: none;
+      font-family: "Oswald";
     }
   }
 }
@@ -339,3 +340,22 @@ $nav_border_right_color: #515791;
 /* min-width 1921px, xxlarge screens */
 
 // END RESPOND.CSS
+
+.my-gallery {
+  width: 100%;
+  float: left;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+  }
+  figcaption {
+    display: none;
+  }
+}
+
