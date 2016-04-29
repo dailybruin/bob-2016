@@ -69,6 +69,16 @@ p {
     font-weight: bold;
     font-size: 1.5rem; }
 
+.first-letter {
+  float: left;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-right: 10px;
+  color: #2199e8; }
+
 figure {
   display: inline-block;
   float: left;
