@@ -92,4 +92,8 @@ figcaption {
 .my-gallery figcaption {
   display: none; }
 
+  #gallery-container{
+    padding: 1em;
+  }
+
 /*# sourceMappingURL=style.css.map */
