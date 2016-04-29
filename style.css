@@ -20,12 +20,12 @@ video {
 .landing-header {
   position: absolute;
   padding: 0;
-  margin: auto;
-  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
   top: 50%;
   right: 0;
   bottom: 0;
-  left: 15%;
+  left: 20%;
   transform: translateY(-50%);
   color: white;
   z-index: 1;
