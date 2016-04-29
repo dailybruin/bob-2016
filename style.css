@@ -194,6 +194,11 @@ figcaption {
 /* Medium screens */
 /* min-width 641px, medium screens */
 @media only screen and (max-width: 64em) {
+  nav {
+    text-align: center; }
+    nav h2 {
+      text-align: center !important; }
+
   figure {
     width: 100%;
     margin: auto;

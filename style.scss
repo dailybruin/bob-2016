@@ -235,6 +235,12 @@ $nav_border_right_color: #515791;
 /* min-width 641px, medium screens */
 
 @media only screen and (max-width: 64em) {
+  nav {
+    text-align: center;
+    h2 {
+      text-align: center!important;
+    }
+  }
   figure {
     width: 100%;
     margin: auto;
@@ -275,14 +281,13 @@ $nav_border_right_color: #515791;
   #sidebar {
     width: 220px;
     height: 100%;
-    
     z-index: 1001; /* need to get on top of leaflet */
- 
     position: fixed;
     left: 30px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
+    
     nav {
       display: block;
       .nav-item {
