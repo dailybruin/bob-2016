@@ -330,3 +330,21 @@ $nav_border_right_color: #515791;
 /* min-width 1921px, xxlarge screens */
 
 // END RESPOND.CSS
+
+.my-gallery {
+  width: 100%;
+  float: left;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+  }
+  figcaption {
+    display: none;
+  }
+}

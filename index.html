@@ -7,6 +7,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,700italic,700,400italic|Open+Sans:400,700,600|Oswald' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<title>BOB</title>
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+
 </head>
 <body>
 
@@ -20,7 +23,7 @@
         <h2>Student Section</h2>
         <a class="nav-item active" href="#post1">WRITING PIECE 1</a>
         <a class="nav-item" href="#post2">WRITING PIECE 2</a>
-        <a class="nav-item" href="#">PHOTO ESSAY 1</a>
+        <a class="nav-item" href="#gallery1">PHOTO ESSAY 1</a>
         <h2>Admin Section</h2>
         <a class="nav-item" href="#post3">WRITING PIECE 3</a>
         <a class="nav-item" href="#">WRITING PIECE 4</a>
@@ -97,6 +100,55 @@
 
 	<hr>
 
+	<div class="gallery" id="gallery1">
+		<img alt="Image 1 Title" src="https://tinycupcakesstore.files.wordpress.com/2015/03/cupcakes.jpg"
+		data-image="https://tinycupcakesstore.files.wordpress.com/2015/03/cupcakes.jpg"
+		data-description="Image 1 Description">
+
+		<img alt="Image 2 Title" src="http://www.yourcupofcake.com/wp-content/uploads/2013/08/Strawberry-Red-Velvet-Cupcakes1.jpg"
+		data-image="http://www.yourcupofcake.com/wp-content/uploads/2013/08/Strawberry-Red-Velvet-Cupcakes1.jpg"
+		data-description="Image 2 Description">
+
+		<img alt ="Image 3 Title" src="https://easybaked.files.wordpress.com/2013/03/strawberry-lemonade-cupcake2.jpg"
+		data-image="https://easybaked.files.wordpress.com/2013/03/strawberry-lemonade-cupcake2.jpg"
+		data-description="Image 3 Description">
+
+		<img alt ="Cactus" src="img/cactus.jpg"
+		data-image="img/cactus.jpg"
+		data-description="Cactus">
+
+		<img alt ="Cactus Garden" src="img/cactus_garden.jpg"
+		data-image="img/cactus_garden.jpg"
+		data-description="Cactus Garden">
+
+		<img alt ="SPRING SHOWCASE" src="http://dailybruin.com/images/galleries/spring-showase/F4A0844.jpg"
+		data-image="http://dailybruin.com/images/galleries/spring-showase/F4A0844.jpg"
+		data-description="Cactus Garden">
+
+		<img alt ="WWP" src="http://dailybruin.com/images/galleries/ucla-wwp-beats-stanford-off-pen/AYEO8481.jpg"
+		data-image="http://dailybruin.com/images/galleries/ucla-wwp-beats-stanford-off-pen/AYEO8481.jpg"
+		data-description="Cactus Garden">
+
+		<img alt ="Holi 2" src="http://dailybruin.com/images/galleries/holi-2016/MG_7920.jpg"
+		data-image="http://dailybruin.com/images/galleries/holi-2016/MG_7920.jpg"
+		data-description="Cactus Garden">
+
+		<img alt ="Holi 3" src="http://dailybruin.com/images/galleries/holi-2016/IMG_0123.jpg"
+		data-image="http://dailybruin.com/images/galleries/holi-2016/IMG_0123.jpg"
+		data-description="Cactus Garden">
+
+		<img alt ="Holi 4" src="http://dailybruin.com/images/galleries/holi-2016/IMG_8063.jpg"
+		data-image="http://dailybruin.com/images/galleries/holi-2016/IMG_8063.jpg"
+		data-description="Cactus Garden">
+
+		<img alt ="Cactus Garden" src="img/cactus_garden.jpg"
+		data-image="img/cactus_garden.jpg"
+		data-description="Cactus Garden">
+
+	</div>
+
+	<hr>
+
 	<article class="post" id="post3">
 		<p>Lorem ipsum dolor sit amet, nunc diam sed in nec, sodales hymenaeos enim eu a metus, neque tempore vestibulum aliquet odio dolor pede. Arcu molestie cursus ut, neque accumsan commodo nunc. Pharetra morbi suscipit, sed placerat nec viverra erat, aliquam velit gravida dui turpis ullamcorper, vulputate hac lacus class sit pellentesque, amet augue urna erat tellus diam egestas. Condimentum consectetuer praesent deleniti, pretium dui eget molestie, quam duis condimentum et. Wisi est sem non lacus, voluptatem cursus curabitur, ullamcorper felis, non orci dignissim hac sed. Orci malesuada nec, torquent pede lobortis erat ipsum cras adipiscing, auctor libero eu nulla tellus gravida, non non arcu commodo pede euismod, in nibh erat curabitur ut turpis mi. Nam vel placerat ut, nulla ut in et nonummy mauris egestas, vestibulum quis, sagittis ut erat, ut mauris. Diam ligula fringilla leo a, aliquam venenatis at vehicula mauris venenatis velit, quam aliquam natoque sagittis nisl, mus nunc ante magna lorem molestie, ornare diam lacinia egestas. Laoreet arcu suspendisse, consequat nunc massa, primis felis nullam dolor.</p>
 		<figure class="right">
@@ -122,8 +174,9 @@
 
 	<hr>
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -180,6 +233,15 @@ $('a').click(function(){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 1000);
     return false;
+});
+</script>
+
+<!-- Gallery JS -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".gallery").unitegallery({
+		tiles_type:"justified"
+	});
 });
 </script>
 
