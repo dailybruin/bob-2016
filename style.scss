@@ -42,7 +42,7 @@ video {
 }
 
 article{
-  max-width: 600px;
+  max-width: 650px;
   width: auto;
   text-align: left;
   margin: 3rem auto;
@@ -60,6 +60,10 @@ article{
     border-left: 4px solid #E57A44;
     @include headingStyles;
     font-size: 2rem;
+  }
+  blockquote.right {
+  	border-left: none;
+  	border-right: 4px solid #E57A44;
   }
 }
 
@@ -81,7 +85,7 @@ p {
   padding-top: 4px;
   padding-left: 2px;
   padding-right: 10px;
-  color: #2199e8;
+  color: #E57A44;
 }
 
 //left figure
@@ -124,7 +128,7 @@ figcaption{
   }
 }
 
-$nav_border_right_color: #515791;
+$nav_border_right_color: #E57A44;
 
 #sidebar h2 {
   border-bottom: 1px solid rgba(0,0,0, 0.1);
@@ -227,23 +231,10 @@ $nav_border_right_color: #515791;
 
   }
 }
-// RESPOND.CSS
+// START RESPOND.CSS
 
-/* Small screens */
-@media only screen {}
-
-/* Define mobile styles */
-
-@media only screen and (max-width: 40em) {}
-
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-/* Medium screens */
-@media only screen and (min-width: 40.063em) {}
-
-/* min-width 641px, medium screens */
-
-@media only screen and (max-width: 64em) {
+// MOBILE SCREENS
+@media only screen and (max-width: 65em) {
   nav {
     text-align: center;
     h2 {
@@ -257,7 +248,7 @@ $nav_border_right_color: #515791;
 
     .right {
         width: 100%;
-        margin: auto;
+        margin: 0;
         padding: 1rem 0;
     }
   }
@@ -273,8 +264,8 @@ $nav_border_right_color: #515791;
       margin: 1em auto 1em auto;
     }
 
-    blockquote.right {
-        float: none;
+    .right {
+    	float: none;
         max-width: 100%;
         margin: 1em auto 1em auto;
     }
@@ -287,10 +278,8 @@ $nav_border_right_color: #515791;
   }
 }
 
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-/* Large screens */
-@media only screen and (min-width: 64.063em) {
+// LARGE SCREENS
+@media only screen and (min-width: 65.063em) {
   #sidebar {
     width: 220px;
     height: 100%;
@@ -321,26 +310,6 @@ $nav_border_right_color: #515791;
     }
   }
 }
-
-/* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
-
-/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
-/* XLarge screens */
-@media only screen and (min-width: 90.063em) {}
-
-/* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
-
-/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-/* XXLarge screens */
-@media only screen and (min-width: 120.063em) {}
-
-/* min-width 1921px, xxlarge screens */
 
 // END RESPOND.CSS
 

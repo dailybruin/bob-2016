@@ -34,7 +34,7 @@ video {
   font-weight: 400; }
 
 article {
-  max-width: 600px;
+  max-width: 650px;
   width: auto;
   text-align: left;
   margin: 3rem auto;
@@ -55,6 +55,9 @@ article {
     letter-spacing: 1.2px;
     font-weight: 400;
     font-size: 2rem; }
+  article blockquote.right {
+    border-left: none;
+    border-right: 4px solid #E57A44; }
 
 #articlediv {
   margin-left: 290px;
@@ -71,7 +74,7 @@ p {
   padding-top: 4px;
   padding-left: 2px;
   padding-right: 10px;
-  color: #2199e8; }
+  color: #E57A44; }
 
 figure {
   display: inline-block;
@@ -195,15 +198,10 @@ figcaption {
       background-color: rgba(81, 87, 145, 0.05); }
     #sidebar nav .nav-item.active {
       background-color: rgba(81, 87, 145, 0.1);
-      border-right: 4px solid #515791;
+      border-right: 4px solid #E57A44;
       font-weight: 400; }
 
-/* Small screens */
-/* Define mobile styles */
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-/* Medium screens */
-/* min-width 641px, medium screens */
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 65em) {
   nav {
     text-align: center; }
     nav h2 {
@@ -215,7 +213,7 @@ figcaption {
     padding: 1rem 0; }
     figure .right {
       width: 100%;
-      margin: auto;
+      margin: 0;
       padding: 1rem 0; }
 
   .landing-header {
@@ -225,7 +223,7 @@ figcaption {
     float: none;
     max-width: 100%;
     margin: 1em auto 1em auto; }
-  article blockquote.right {
+  article .right {
     float: none;
     max-width: 100%;
     margin: 1em auto 1em auto; }
@@ -234,9 +232,7 @@ figcaption {
     padding-top: 30px;
     margin-top: 30px;
     margin-left: 0px; } }
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-/* Large screens */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 65.063em) {
   #sidebar {
     width: 220px;
     height: 100%;
@@ -261,13 +257,6 @@ figcaption {
     #sidebar #sidebar-expand {
       display: none;
       font-family: "Oswald"; } }
-/* min-width 1025px, large screens */
-/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-/* XLarge screens */
-/* min-width 1441px, xlarge screens */
-/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-/* XXLarge screens */
-/* min-width 1921px, xxlarge screens */
 .my-gallery {
   width: 100%;
   float: left; }
