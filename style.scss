@@ -129,6 +129,8 @@ figcaption{
 }
 
 $nav_border_right_color: #E57A44;
+$nav_hilight_color: rgba(237, 159, 120, 0.4);
+$nav_hover_color: rgba(237, 159, 120, 0.2);
 
 #sidebar h2 {
   border-bottom: 1px solid rgba(0,0,0, 0.1);
@@ -221,10 +223,10 @@ $nav_border_right_color: #E57A44;
     @include headingStyles;
 
     &:hover {
-      background-color: rgba(81, 87, 145, 0.05);
+      background-color: $nav_hover_color;
     }
     &.active {
-      background-color: rgba(81, 87, 145, 0.1);
+      background-color: $nav_hilight_color;
       border-right: 4px solid $nav_border_right_color;
       font-weight: 400;
     }
