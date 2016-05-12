@@ -29,13 +29,13 @@ $(document).ready(function(){
     // });
 
     var changeNavHilightOnScroll = function() {
-    	if ($(window).scrollTop() >= $('#post4').position().top) {
-    	    changeNavHilight($('a[href="#post4"]'));
-    	}
-    	else if ($(window).scrollTop() >= $('#post3').position().top) {
-    	    changeNavHilight($('a[href="#post3"]'));
-    	}
-    	else if ($(window).scrollTop() >= $('#gallery1').position().top) {
+    	// if ($(window).scrollTop() >= $('#post4').position().top) {
+    	//     changeNavHilight($('a[href="#post4"]'));
+    	// }
+    	// else if ($(window).scrollTop() >= $('#post3').position().top) {
+    	//     changeNavHilight($('a[href="#post3"]'));
+    	// }
+    	if ($(window).scrollTop() >= $('#post2').position().top + $('#post2').outerHeight()) {
     	    changeNavHilight($('a[href="#gallery1"]'));
     	}
     	else if ($(window).scrollTop() >= $('#post2').position().top) {
