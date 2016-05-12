@@ -56,6 +56,9 @@ article {
     letter-spacing: 1.2px;
     font-weight: 400;
     font-size: 2rem; }
+    article blockquote aside {
+      font-size: 1rem;
+      text-align: right; }
   article blockquote.right {
     border-left: none;
     border-right: 4px solid rgba(29, 80, 142, 0.4); }

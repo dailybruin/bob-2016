@@ -73,6 +73,11 @@ article{
     border-left: 4px solid $nav_hilight_color;
     @include headingStyles;
     font-size: 2rem;
+
+    aside {
+    	font-size: 1rem;
+    	text-align: right;
+    }
   }
   blockquote.right {
   	border-left: none;
