@@ -21,7 +21,7 @@ video {
   padding: 0;
   margin-left: 1rem;
   margin-right: 1rem;
-  top: 50%;
+  top: 40%;
   right: 0;
   bottom: 0;
   left: 20%;
@@ -36,7 +36,8 @@ video {
     text-align: center;
     color: rgba(255, 255, 255, 0.7); }
   .landing-header .landing-descr {
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400; }
 
 .landing-overlay {
   position: absolute;
@@ -45,8 +46,7 @@ video {
   padding: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 article {
   max-width: 650px;
