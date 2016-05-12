@@ -15,6 +15,14 @@ $(document).ready(function(){
     	}
     });
 
+    $("#landing-vd").on("canplaythrough", function() {
+        // mute video 10 seconds after it can play through
+        window.setTimeout(function() {
+            console.log("muting audio");
+            $(this).prop("muted", true);
+        }.bind(this), 10*1000);
+    });
+
     var changeNavHilight = function(newHilighted) {
     	$('.nav-item').removeClass("active");
     	newHilighted.addClass("active");

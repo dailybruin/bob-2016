@@ -14,7 +14,8 @@ video {
   position: relative;
   width: 100%;
   opacity: 0.8;
-  z-index: -100; }
+  z-index: -100;
+  display: block; }
 
 .landing-header {
   position: absolute;
@@ -38,10 +39,6 @@ video {
   .landing-header .landing-descr {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400; }
-  #db-presents img {
-      height: 25px;
-      padding: 1px;
-  }
 
 .landing-overlay {
   position: absolute;
@@ -166,7 +163,7 @@ figcaption {
     padding: 10px;
     letter-spacing: 1px;
     color: #1d508e; }
-  #sidebar #print-version,  #sidebar #db-presents{
+  #sidebar #print-version {
     font-size: 0.9rem;
     bottom: 0;
     text-align: center;
