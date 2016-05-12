@@ -4,6 +4,18 @@
   font-weight: 400;
 }
 
+$nav_border_right_color: rgb(29, 80, 142);
+$nav_hilight_color: rgba(29, 80, 142, 0.4);
+$nav_hover_color: rgba(29, 80, 142, 0.2);
+
+@mixin mainBGColorWithOpacity($opacity) {
+  background-color: rgba(29, 80, 142, $opacity);
+}
+
+@mixin mainTextColorWithOpacity($opacity) {
+  color: rgba(29, 80, 142, $opacity);
+}
+
 body {
   font-family: georgia, "times new roman", serif;
   font-size: 18px;
@@ -21,7 +33,7 @@ body {
 
 video { 
 	position: relative;
-  width: 100%;
+	width: 100%;
 	opacity: 0.8;
 	z-index: -100;
 }
@@ -50,6 +62,7 @@ article{
   line-height: 1.5;
   h1 {
     @include headingStyles;
+    @include mainTextColorWithOpacity(1);
   }
   blockquote{
     padding-left: 15px;
@@ -57,13 +70,13 @@ article{
     max-width: 500px;
     margin: 2rem 4rem;
     margin-left: -100px;
-    border-left: 4px solid #E57A44;
+    border-left: 4px solid $nav_hilight_color;
     @include headingStyles;
     font-size: 2rem;
   }
   blockquote.right {
   	border-left: none;
-  	border-right: 4px solid #E57A44;
+  	border-right: 4px solid $nav_hilight_color;
   }
 }
 
@@ -85,7 +98,7 @@ p {
   padding-top: 4px;
   padding-left: 2px;
   padding-right: 10px;
-  color: #E57A44;
+  @include mainTextColorWithOpacity(0.5);
 }
 
 //left figure
@@ -128,10 +141,6 @@ figcaption{
   }
 }
 
-$nav_border_right_color: #E57A44;
-$nav_hilight_color: rgba(237, 159, 120, 0.4);
-$nav_hover_color: rgba(237, 159, 120, 0.2);
-
 #sidebar h2 {
   border-bottom: 1px solid rgba(0,0,0, 0.1);
   font-size: 2rem;
@@ -159,6 +168,7 @@ $nav_hover_color: rgba(237, 159, 120, 0.2);
     font-size: 1.7rem;
     padding: 10px;
     letter-spacing: 1px;
+	@include mainTextColorWithOpacity(1);
   }
   #sidebar-expand {
     display: block;
@@ -173,6 +183,7 @@ $nav_hover_color: rgba(237, 159, 120, 0.2);
     letter-spacing: 0.2rem;
     cursor: pointer;
     background-color: #444;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     .expand-control {
       float: right;
       display: block;
