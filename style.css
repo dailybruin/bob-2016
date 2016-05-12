@@ -62,6 +62,9 @@ article {
     article blockquote aside {
       font-size: 1rem;
       text-align: right; }
+  article .subhead {
+    font-weight: 600;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif; }
   article blockquote.right {
     border-left: none;
     border-right: 4px solid rgba(29, 80, 142, 0.4); }
@@ -272,14 +275,14 @@ footer {
         padding: 8px 12px;
         text-align: right; }
     #sidebar #sidebar-logo {
-      font-size: 2.5rem;
-      line-height: 3rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
       padding: 20px;
       margin-bottom: 10px;
       letter-spacing: 0; }
     #sidebar #sidebar-expand {
       display: none;
-      font-family: "Oswald"; } }
+      font-family: "Montserrat", Helvetica, Arial, sans-serif; } }
 .my-gallery {
   width: 100%;
   float: left; }

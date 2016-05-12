@@ -8,6 +8,8 @@ $nav_border_right_color: rgb(29, 80, 142);
 $nav_hilight_color: rgba(29, 80, 142, 0.4);
 $nav_hover_color: rgba(29, 80, 142, 0.2);
 
+$special_font: "Montserrat", Helvetica, Arial, sans-serif;
+
 @mixin mainBGColorWithOpacity($opacity) {
   background-color: rgba(29, 80, 142, $opacity);
 }
@@ -64,7 +66,7 @@ article{
     @include mainTextColorWithOpacity(1);
   }
   .byline {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: $special_font;
     text-transform: uppercase;
     font-size: 0.85rem;
   }
@@ -82,6 +84,10 @@ article{
     	font-size: 1rem;
     	text-align: right;
     }
+  }
+  .subhead {
+  	font-weight: 600;
+  	font-family: $special_font;
   }
   blockquote.right {
   	border-left: none;
@@ -169,7 +175,7 @@ figcaption{
   #sidebar-logo {
     color: black;
     font-weight: 100;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: $special_font;
     display: block;
     text-align: right;
     text-transform: uppercase;
@@ -197,7 +203,7 @@ figcaption{
     letter-spacing: 0.2rem;
     cursor: pointer;
     background-color: #444;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: $special_font;
     .expand-control {
       float: right;
       display: block;
@@ -262,7 +268,7 @@ figcaption{
 footer {
 	font-size: 0.8rem;
 	text-align: center;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: $special_font;
     color: grey;
 }
 
@@ -337,15 +343,15 @@ footer {
       }
     }
     #sidebar-logo {
-      font-size: 2.5rem;
-      line-height: 3rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
       padding: 20px;
       margin-bottom: 10px;
       letter-spacing: 0;
     }
     #sidebar-expand {
       display: none;
-      font-family: "Oswald";
+      font-family: $special_font;
     }
   }
 }
