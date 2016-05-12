@@ -26,11 +26,15 @@ video {
   bottom: 0;
   left: 20%;
   transform: translateY(-50%);
-  color: white;
   z-index: 1;
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   letter-spacing: 1.2px;
   font-weight: 400; }
+  .landing-header .landing-title {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    color: #1d508e; }
 
 article {
   max-width: 650px;
@@ -142,7 +146,7 @@ figcaption {
     display: block;
     text-align: right;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1rem;
     padding: 10px;
     letter-spacing: 1px;
     color: #1d508e; }
@@ -221,7 +225,8 @@ footer {
   font-size: 0.8rem;
   text-align: center;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  color: grey; }
+  color: grey;
+  margin-top: 1rem; }
 
 @media only screen and (max-width: 65em) {
   #sidebar {
@@ -275,7 +280,7 @@ footer {
         padding: 8px 12px;
         text-align: right; }
     #sidebar #sidebar-logo {
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 2.5rem;
       padding: 20px;
       margin-bottom: 10px;
