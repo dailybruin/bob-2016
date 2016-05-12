@@ -207,6 +207,12 @@ figcaption {
       border-right: 4px solid #1d508e;
       font-weight: 400; }
 
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: grey; }
+
 @media only screen and (max-width: 65em) {
   nav {
     text-align: center; }
