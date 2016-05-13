@@ -15,14 +15,22 @@ $(document).ready(function(){
     	}
     });
 
-    $("#landing-vd").on("canplaythrough", function() {
-        // mute video 10 seconds after it can play through
-        window.setTimeout(function() {
+    var isMuted = false; 
+    $('#mute').click(function(e) {
+        if(isMuted == false)
+        {
             console.log("muting audio");
-            $(this).prop("muted", true);
-        }.bind(this), 10*1000);
+            document.getElementById("mute").innerHTML="Unmute";
+            isMuted=true;
+        }
+        else{
+            console.log("playing audio");
+            document.getElementById("mute").innerHTML="Mute";
+            isMuted=false;
+        }
+        $('#landing-vd').prop("muted", isMuted);
     });
-
+    
     var changeNavHilight = function(newHilighted) {
     	$('.nav-item').removeClass("active");
     	newHilighted.addClass("active");

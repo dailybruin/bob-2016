@@ -204,7 +204,7 @@ figcaption{
     letter-spacing: 1px;
 	@include mainTextColorWithOpacity(1);
   }
-  #print-version, #db-presents{
+  #print-version, #db-presents,#mute{
 	font-size: 0.9rem;
 	bottom: 0;
 	text-align: center;	
@@ -268,7 +268,7 @@ figcaption{
   &.expanded nav {
     display: block;
   }
-  nav .nav-item {
+  nav .nav-item, #mute {
     display: block;
     width: 100%;
     color: black;

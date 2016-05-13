@@ -163,7 +163,7 @@ figcaption {
     padding: 10px;
     letter-spacing: 1px;
     color: #1d508e; }
-  #sidebar #print-version, #sidebar #db-presents {
+  #sidebar #print-version, #sidebar #db-presents, #sidebar #mute {
     font-size: 0.9rem;
     bottom: 0;
     text-align: center;
@@ -220,7 +220,7 @@ figcaption {
       /* need to get on top of leaflet */ }
   #sidebar.expanded nav {
     display: block; }
-  #sidebar nav .nav-item {
+  #sidebar nav .nav-item, #sidebar #mute {
     display: block;
     width: 100%;
     color: black;
@@ -230,9 +230,9 @@ figcaption {
     font-family: "Oswald", Helvetica, Arial, sans-serif;
     letter-spacing: 1.2px;
     font-weight: 400; }
-    #sidebar nav .nav-item:hover {
+    #sidebar nav .nav-item:hover, #sidebar #mute:hover {
       background-color: rgba(29, 80, 142, 0.2); }
-    #sidebar nav .nav-item.active {
+    #sidebar nav .nav-item.active, #sidebar #mute.active {
       background-color: rgba(29, 80, 142, 0.4);
       border-right: 4px solid #1d508e;
       font-weight: 400; }
