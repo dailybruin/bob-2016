@@ -204,7 +204,7 @@ figcaption{
     letter-spacing: 1px;
 	@include mainTextColorWithOpacity(1);
   }
-  #print-version {
+  #print-version, #db-presents{
 	font-size: 0.9rem;
 	bottom: 0;
 	text-align: center;	
@@ -249,6 +249,10 @@ figcaption{
     top: 2px;
   }
   nav {
+    img{
+      padding: 1px;
+      height: 25px;
+    }
     display: none;
     h2 {
       border: none;

@@ -163,7 +163,7 @@ figcaption {
     padding: 10px;
     letter-spacing: 1px;
     color: #1d508e; }
-  #sidebar #print-version {
+  #sidebar #print-version, #sidebar #db-presents {
     font-size: 0.9rem;
     bottom: 0;
     text-align: center;
@@ -205,6 +205,9 @@ figcaption {
     top: 2px; }
   #sidebar nav {
     display: none; }
+    #sidebar nav img {
+      padding: 1px;
+      height: 25px; }
     #sidebar nav h2 {
       border: none;
       line-height: 10px;
