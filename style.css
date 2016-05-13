@@ -138,6 +138,7 @@ figcaption {
     font-family: sans-serif; }
 
 #sidebar h2 {
+  padding-right: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 2rem;
   font-family: Georgia;
