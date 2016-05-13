@@ -55,7 +55,7 @@ $(document).ready(function(){
     	else if ($(window).scrollTop() >= $('#post3').position().top) {
     	    changeNavHilight($('a[href="#post3"]'));
     	}
-        else if ($(window).scrollTop() >= $('#gallery1').position().top) {
+        else if ($(window).scrollTop() >= $('#post2').position().top + $('#post2').outerHeight()) {
             changeNavHilight($('a[href="#gallery1"]'));
         }
         else if ($(window).scrollTop() >= $('#post2').position().top) {
