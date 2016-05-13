@@ -19,12 +19,10 @@ $(document).ready(function(){
     $('#mute').click(function(e) {
         if(isMuted == false)
         {
-            console.log("muting audio");
             document.getElementById("mute").innerHTML="Unmute";
             isMuted=true;
         }
         else{
-            console.log("playing audio");
             document.getElementById("mute").innerHTML="Mute";
             isMuted=false;
         }
@@ -51,14 +49,17 @@ $(document).ready(function(){
     	// else if ($(window).scrollTop() >= $('#post3').position().top) {
     	//     changeNavHilight($('a[href="#post3"]'));
     	// }
-    	if ($(window).scrollTop() >= $('#post2').position().top + $('#post2').outerHeight()) {
-    	    changeNavHilight($('a[href="#gallery1"]'));
+    	if ($(window).scrollTop() >= $('#post3').position().top + $('#post3').outerHeight()) {
+    	    changeNavHilight($('a[href="#post4"]'));
     	}
-    	else if ($(window).scrollTop() >= $('#post2').position().top) {
-    	    changeNavHilight($('a[href="#post2"]'));
+    	else if ($(window).scrollTop() >= $('#post3').position().top) {
+    	    changeNavHilight($('a[href="#post3"]'));
     	}
-        else if ($(window).scrollTop() >= $('#post1').position().top) {
-            changeNavHilight($('a[href="#post1"]'));
+        else if ($(window).scrollTop() >= $('#gallery1').position().top) {
+            changeNavHilight($('a[href="#gallery1"]'));
+        }
+        else if ($(window).scrollTop() >= $('#post2').position().top) {
+            changeNavHilight($('a[href="#post2"]'));
         }
         else if ($(window).scrollTop() < $('#post1').position().top) {
     	    changeNavHilight($('a[href="#post1"]'));
